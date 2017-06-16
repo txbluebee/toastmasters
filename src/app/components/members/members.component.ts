@@ -8,7 +8,9 @@ import { FirebaseService } from '../../services/firebase.service';
 })
 export class MembersComponent implements OnInit {
   members;
-  constructor(private firebaseService: FirebaseService) { }
+  constructor(
+    private firebaseService: FirebaseService
+  ) { }
 
   ngOnInit() {
     this.members = this.firebaseService.getMembers();

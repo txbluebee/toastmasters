@@ -1,3 +1,6 @@
-<p>
-  admin works!
-</p>
+<h1>Administration</h1>
+<a class="btn btn-primary" [routerLink]="['/admin/add-member']">Add Member </a>
+<div *ngFor="let member of members | async">
+  <h3>{{member.name}}</h3>
+  <p>{{member.role}}</p>
+</div>

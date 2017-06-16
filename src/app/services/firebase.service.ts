@@ -12,4 +12,13 @@ export class FirebaseService {
   getMembers() {
     return this.members;
   }
+
+  getMemberById(id) {
+    return this.database.object('/members/' + id);
+  }
+
+  addMember(member){
+    this.members.push(member);
+  }
+
 }
