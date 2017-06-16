@@ -17,6 +17,7 @@ import { EditMemberComponent } from './components/edit-member/edit-member.compon
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { FilterPipe } from './filter.pipe';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
     EditMemberComponent,
     NavbarComponent,
     HomeComponent,
-    AdminComponent
+    AdminComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

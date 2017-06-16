@@ -8,12 +8,17 @@ import { FirebaseService } from '../../services/firebase.service';
 })
 export class MembersComponent implements OnInit {
   members;
+  filterOption: string = "all"
   constructor(
     private firebaseService: FirebaseService
   ) { }
 
   ngOnInit() {
     this.members = this.firebaseService.getMembers();
+  }
+
+  onChangeRole(filterOptionFromMenu){
+    this.filterOption = filterOptionFromMenu;
   }
 
 }
