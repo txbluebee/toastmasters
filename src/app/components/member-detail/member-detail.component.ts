@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Member } from '../../member.model';
+import { FirebaseService } from '../../services/firebase.service';
 
 @Component({
   selector: 'app-member-detail',

@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+import { FirebaseService } from './services/firebase.service'
 
 import { AppComponent } from './app.component';
 import { MembersComponent } from './components/members/members.component';
@@ -44,9 +45,10 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
