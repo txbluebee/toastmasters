@@ -1,28 +1,44 @@
-# Toastmaster
+#Toastmasters
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
+#### Angular Extended Independent Project, 06/16/2017
 
-## Development server
+#### By Brian Fan
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+Toastmasters is a web application to manage members. The user is able to see the list of members and their member profile. The administrator can add, edit, delete member info.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Prerequisites
 
-## Build
+You will need the following things properly installed on your computer.
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Angular CLI](https://cli.angular.io/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Installation
 
-## Running unit tests
+* `git clone https://github.com/txbluebee/toastmasters`
+* `cd toastmasters`
+* `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Running / Development
 
-## Running end-to-end tests
+* `ng serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Technologies Used
 
-## Further help
+_HTML_
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+_SCSS_
+
+_Bootstrap_
+
+_TypeScript_
+
+_Angular.js_
+
+### License
+
+Copyright (c) 2017 Brian Fan
+The website is licensed under the MIT license.
