@@ -20,8 +20,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { FilterPipe } from './filter.pipe';
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'members', component: MembersComponent},
+  {path: '', component: MembersComponent},
   {path: 'members/:id', component: MemberDetailComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'admin/add-member', component: AddMemberComponent},

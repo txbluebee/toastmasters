@@ -9,7 +9,7 @@
       </select>
     </div>
   </div>
-  <div class="col">
+  <!-- <div class="col">
     <div class="form-group">
       <select (change)="onChangeRole($event.target.value)" class="form-control">
          <option value="all" disabled selected>Sort By City</option>
@@ -17,14 +17,27 @@
          <option *ngFor="let member of members | async">{{member.city}}</option>
       </select>
     </div>
-  </div>
+  </div> -->
+  <div class="col"></div>
 </div>
 
 
 
 
-<ul>
-  <li *ngFor='let member of members | async | filter:filterOption'>
-    <a [routerLink]="['/members/' + member.$key]">{{member.name}}</a>
-  </li>
-</ul>
+<div class="row mb-5">
+  <div class="col-sm-4" *ngFor='let member of members | async | filter:filterOption'>
+    <div class="card">
+      <img class="card-img-top image-fluid" src="{{(member)?.imageUrl}}" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">Name:{{member.name}}</h4>
+        <p class="card-text"><b>Role:</b> {{member.role}}</p>
+        <p class="card-text"><b>City:</b> {{member.city}}</p>
+      </div>
+      <div class="card-footer">
+        <a [routerLink]="['/members/' + member.$key]">Check Member Detail</a>
+      </div>
+    </div>
+  </div>
+<!--
+    <a [routerLink]="['/members/' + member.$key]">{{member.name}}</a> -->
+</div>
