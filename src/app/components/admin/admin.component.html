@@ -3,4 +3,7 @@
 <div *ngFor="let member of members | async">
   <h3>{{member.name}}</h3>
   <p>{{member.role}}</p>
+  <a class="btn btn-success" [routerLink]="['/admin/edit/members/' + member.$key]">Edit</a>
+
+  <a class="btn btn-danger" (click)="deleteMember(member.$key)">Delete</a>
 </div>

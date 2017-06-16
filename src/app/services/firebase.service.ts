@@ -21,4 +21,12 @@ export class FirebaseService {
     this.members.push(member);
   }
 
+  updateMember(id, updatedMemberInfo){
+    this.members.update(id, updatedMemberInfo);
+  }
+
+  deleteMember(id){
+    this.members.remove(id);
+  }
+
 }

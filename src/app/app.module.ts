@@ -22,9 +22,10 @@ const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'members', component: MembersComponent},
   {path: 'members/:id', component: MemberDetailComponent},
-  {path: 'admin/add-member', component: AddMemberComponent},
-  {path: 'about', component: AboutComponent},
   {path: 'admin', component: AdminComponent},
+  {path: 'admin/add-member', component: AddMemberComponent},
+  {path: 'admin/edit/members/:id', component: EditMemberComponent},
+  {path: 'about', component: AboutComponent}
 ];
 
 

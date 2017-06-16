@@ -17,4 +17,10 @@ export class AdminComponent implements OnInit {
     this.members = this.firebaseService.getMembers();
   }
 
+  deleteMember(id){
+    if(confirm("Are you sure you want to delete this member?")){
+  this.firebaseService.deleteMember(id);
+}
+  }
+
 }
